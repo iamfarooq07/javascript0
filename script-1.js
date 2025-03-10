@@ -44,3 +44,22 @@
 // console.log("Salary : " + empolyes[3].salary)
 // console.log("Time : " + empolyes[3].time)
 // console.log('Present : ' + empolyes[3].present)
+
+//--------------------------------------/
+
+//  -----------string-method------------//
+ 
+let b = "farooq";
+console.log(b.charAt())
+console.log(b.at(1))
+console.log(b.toLowerCase())
+console.log(b.toUpperCase())
+console.log(b.length)
+console.log(b.slice(0,3))
+console.log(b.slice(2))
+console.log(b.replace("roo" , "123"))
+console.log(b.concat("ali", " = " , "maaz" , "umer"))
+console.log(b.indexOf())
+console.log(b.toString("ali"))
+console.log()
+console.log()
