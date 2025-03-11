@@ -65,15 +65,24 @@
 
 //------- / 
 
-//Write a JavaScript program that takes a number as input and checks whether it is positive, negative, or zero.
+// Write a JavaScript program that takes a number as input and checks whether it is positive, negative, or zero.
  
-var  num = prompt ("Enter Your number");
+// var  num = prompt ("Enter Your number");
 
-if (num > 0 && num < 10) {
-    console.log("positive")
-}else if (num < 0){
- console.log("nagetive")
-}
-else{
-    console.log("Zero")
-}
+// if (num > 0 && num < 10) {
+//     console.log("positive")
+// }else if (num < 0){
+//  console.log("nagetive")
+// }
+// else{
+//     console.log("Zero")
+// }
+
+//------/
+
+//------/
+//DOM=document object model -----/
+
+document.title="farooq is good";
+document.body.style.backgroundColor="green"
+console.log(document.body)
