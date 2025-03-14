@@ -89,42 +89,83 @@
 
 //function---/
 
-function firstName() {
-    console.log("This is my first coding blog");
-    return firstName
+// function firstName() {
+//     console.log("This is my first coding blog");
+//     return firstName
+// }
+
+// firstName();
+
+
+// function lastName() {
+//     console.log("hello world")
+// }
+// lastName();
+
+
+// function game() {
+//     console.log("This is console.log code")
+// }
+
+// game();
+
+// function sum(a, b) {
+//     console.log(a + b);
+// }
+
+// sum(319, 28);
+
+
+// function min(a, b, c) {
+//     console.log(a + b + c);
+// }
+
+// min(319, "farooq", 28);
+
+
+// function all (a, b, c) {
+//     console.log(a * b + c);
+// }
+
+// min(319, 223 , 28);
+
+// //--------/
+
+//---object--and--array--/
+
+let product = [
+    {
+        firstname: "mobile",
+        price: 24000,
+        lastname: "i phone",
+        quantity: 30,
+        available: true,
+    },
+    {
+        firstname: "computer",
+        price: 124000,
+        lastname: "hp",
+        quantity: 10,
+        available: false,
+    },
+    {
+        firstname: "laptop",
+        price: 94000,
+        lastname: "sumsung",
+        quantity: 15,
+        available: true,
+    }
+]
+console.log(product);
+
+
+var sum = 0;
+
+for (let i = 0; i < product.length; i++) {
+console.log(product.length)
+sum = sum + product[i].price
 }
+console.log("sum = " +sum)
 
-firstName()
-
-
-function lastName() {
-    console.log("hello world")
-}
-lastName();
-
-
-function game() {
-    console.log("This is console.log code")
-}
-
-game()
-
-function sum(a, b) {
-    console.log(a + b);
-}
-
-sum(319, 28)
-
-
-function min(a, b, c) {
-    console.log(a + b + c);
-}
-
-min(319, "farooq", 28)
-
-
-function all (a, b, c) {
-    console.log(a * b + c);
-}
-
-min(319, 223 , 28)
+var avg = sum / product.length
+console.log("Avg = " +avg)
