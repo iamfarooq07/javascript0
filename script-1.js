@@ -220,48 +220,48 @@
 
 // --------------/
 
-// var products = [
-//     {
-//         id: 101,
-//         title: "Airpods",
-//         variations: [
-//             { color: "blue", price: 2000, quantity: 4 },
-//             { color: "black", price: 3000, quantity: 2 },
-//             { color: "white", price: 4000, quantity: 6 },
-//             { color: "pink", price: 5000, quantity: 8 },
-//         ],
-//     },
-//     {
-//         id: 102,
-//         title: "Mobile",
-//         variations: [
-//             { color: "blue", price: 5000, quantity: 2 },
-//             { color: "black", price: 6000, quantity: 1 },
-//             { color: "white", price: 8000, quantity: 5 },
-//         ],
-//     },
-//     {
-//         id: 103,
-//         title: "Laptop",
-//         variations: [
-//             { color: "blue", price: 500, quantity: 10 },
-//             { color: "black", price: 1000, quantity: 2 },
-//             { color: "white", price: 1500, quantity: 3 },
-//         ],
-//     },
-// ];
+var products = [
+    {
+        id: 101,
+        title: "Airpods",
+        variations: [
+            { color: "blue", price: 2000, quantity: 4 },
+            { color: "black", price: 3000, quantity: 2 },
+            { color: "white", price: 4000, quantity: 6 },
+            { color: "pink", price: 5000, quantity: 8 },
+        ],
+    },
+    {
+        id: 102,
+        title: "Mobile",
+        variations: [
+            { color: "blue", price: 5000, quantity: 2 },
+            { color: "black", price: 6000, quantity: 1 },
+            { color: "white", price: 8000, quantity: 5 },
+        ],
+    },
+    {
+        id: 103,
+        title: "Laptop",
+        variations: [
+            { color: "blue", price: 500, quantity: 10 },
+            { color: "black", price: 1000, quantity: 2 },
+            { color: "white", price: 1500, quantity: 3 },
+        ],
+    },
+];
 
-// for (var j = 0; j < products.length; j++) {
-//     var index = j;
-//     var sum = 0;
-//     for (var i = 0; i < products[index].variations.length; i++) {
-//         sum = sum + products[index].variations[i].quantity;
-//     }
+for (var j = 0; j < products.length; j++) {
+    var index = j;
+    var sum = 0;
+    for (var i = 0; i < products[index].variations.length; i++) {
+        sum = sum + products[index].variations[i].quantity;
+    }
 
-//     var avg = sum / products[index].variations.length;
+    var avg = sum / products[index].variations.length;
 
-//     console.log("Product " + products[index].id + " = " + sum + "(" + avg + ")");
-// }
+    console.log("Product " + products[index].id + " = " + sum + "(" + avg + ")");
+}
 
 // Product 101 =  15 (5)
 // Product 102 =  15 (5)
@@ -335,60 +335,183 @@
 
 //------/
 
-var teambowlers = [
-    {
-        id: 54,
-        firstName: "Mohd Amir",
-        desination: "bowler",
-        works: [
-            { salary: 95000, wciket: 30, format: "ODI" },
-            { salary: 55000, wciket: 22, format: "T20" },
-            { salary: 195000, wciket: 48, format: "TEST" },
-        ]
-    },
-    {
-        id: 65,
-        firstName: "S afridi",
-        desination: "bowler",
-        works: [
-            { salary: 55000, wciket: 10, format: "ODI" },
-            { salary: 20000, wciket: 12, format: "T20" },
-            { salary: 95000, wciket: 18, format: "TEST" },
-        ]
-    },
-    {
-        id: 78,
-        firstName: "H Rouf",
-        desination: "bowler",
-        works: [
-            { salary: 15000, wciket: 25, format: "ODI" },
-            { salary: 35000, wciket: 43, format: "T20" },
-            { salary: 65000, wciket: 15, format: "TEST" },
-        ]
-    },
-    {
-        id: 31,
-        firstName: "J khan",
-        desination: "bowler",
-        works: [
-            { salary: 33000, wciket: 23, format: "ODI" },
-            { salary: 21000, wciket: 19, format: "T20" },
-            { salary: 15000, wciket: 35, format: "TEST" },
-        ]
-    }
-]
-// console.log(teambowlers);
-for (let farooq = 0; farooq < teambowlers.length; farooq++) {
-  
-    var sum = 0;
-    var index = 3;
-    for (let i = 0; i < teambowlers[index].works.length; i++) {
-        //   console.log(teambowlers[0].works[i].salary)
-        sum = sum + teambowlers[index].works[i].wciket
-    }
-    // console.log(sum)
-    var avg = sum / teambowlers[index].works.length
-    // console.log(avg)
-console.log(teambowlers[index].firstName,"=","id","=",teambowlers[index].id,"=","wciket","=",+sum,"=","Avg",+avg)
-}
-// modh amir = id = 54 =wciket=100 =avg(3)
+// var teambowlers = [
+//     {
+//         id: 54,
+//         firstName: "Mohd Amir",
+//         desination: "bowler",
+//         works: [
+//             { salary: 95000, wciket: 30, format: "ODI" },
+//             { salary: 55000, wciket: 22, format: "T20" },
+//             { salary: 195000, wciket: 48, format: "TEST" },
+//         ]
+//     },
+//     {
+//         id: 65,
+//         firstName: "S afridi",
+//         desination: "bowler",
+//         works: [
+//             { salary: 55000, wciket: 10, format: "ODI" },
+//             { salary: 20000, wciket: 12, format: "T20" },
+//             { salary: 95000, wciket: 18, format: "TEST" },
+//         ]
+//     },
+//     {
+//         id: 78,
+//         firstName: "H Rouf",
+//         desination: "bowler",
+//         works: [
+//             { salary: 15000, wciket: 25, format: "ODI" },
+//             { salary: 35000, wciket: 43, format: "T20" },
+//             { salary: 65000, wciket: 15, format: "TEST" },
+//         ]
+//     },
+//     {
+//         id: 31,
+//         firstName: "J khan",
+//         desination: "bowler",
+//         works: [
+//             { salary: 33000, wciket: 23, format: "ODI" },
+//             { salary: 21000, wciket: 19, format: "T20" },
+//             { salary: 15000, wciket: 35, format: "TEST" },
+//         ]
+//     }
+// ]
+// // console.log(teambowlers);
+// for (let farooq = 0; farooq < teambowlers.length; farooq++) {
+
+//     var sum = 0;
+//     var index = 3;
+//     for (let i = 0; i < teambowlers[index].works.length; i++) {
+//         //   console.log(teambowlers[0].works[i].salary)
+//         sum = sum + teambowlers[index].works[i].wciket
+//     }
+//     // console.log(sum)
+//     var avg = sum / teambowlers[index].works.length
+//     // console.log(avg)
+//     console.log(teambowlers[index].firstName, "=", "id", "=", teambowlers[index].id, "=", "wciket", "=", +sum, "=", "Avg", +avg)
+// }
+// // modh amir = id = 54 =wciket=100 =avg(3)
+
+//------/
+
+// 
+
+// var products = [
+//     {
+//         id: 101,
+//         title: "Sony LED 40 inch",
+//         variations: [
+//             { id: 1, color: "black", price: 50000, quantity: 5 },
+//             { id: 2, color: "red", price: 50000, quantity: 1 },
+//             { id: 3, color: "silver", price: 55000, quantity: 8 },
+//         ],
+//         reviews: [
+//             {
+//                 id: 1,
+//                 user: "Ahmad",
+//                 rating: 4.0,
+//                 title: "Good Product",
+//                 comments: "It is a very good product ....",
+//                 date: "06-02-2021",
+//                 status: true,
+//             },
+//             {
+//                 id: 2,
+//                 user: "Zubair",
+//                 rating: 4.5,
+//                 title: "Very Good Product",
+//                 comments: "zubair It is a very good product ....",
+//                 date: "05-02-2021",
+//                 status: false,
+//             },
+//             {
+//                 id: 3,
+//                 user: "Ali",
+//                 rating: 5.0,
+//                 title: "bad Product",
+//                 comments: "ali It is a very good product ....",
+//                 date: "04-02-2021",
+//                 status: true,
+//             },
+//         ],
+//     },
+//     {
+//         id: 102,
+//         title: "Mobile",
+//         variations: [
+//             { id: 1, color: "black", price: 50000, quantity: 5 },
+//             { id: 2, color: "red", price: 50000, quantity: 1 },
+//             { id: 3, color: "silver", price: 55000, quantity: 8 },
+//         ],
+//         reviews: [
+//             {
+//                 id: 1,
+//                 user: "Ahmad",
+//                 rating: 4.0,
+//                 title: "Good Product",
+//                 comments: "It is a very good product ....",
+//                 date: "06-02-2021",
+//                 status: true,
+//             },
+//             {
+//                 id: 2,
+//                 user: "Zubair",
+//                 rating: 4.5,
+//                 title: "Very Good Product",
+//                 comments: "zubair It is a very good product ....",
+//                 date: "05-02-2021",
+//                 status: false,
+//             },
+//             {
+//                 id: 3,
+//                 user: "Ali",
+//                 rating: 5.0,
+//                 title: "bad Product",
+//                 comments: "ali It is a very good product ....",
+//                 date: "04-02-2021",
+//                 status: true,
+//             },
+//         ],
+//     },
+//     {
+//         id: 103,
+//         title: "Bike",
+//         variations: [
+//             { id: 1, color: "black", price: 55000, quantity: 5 },
+//             { id: 2, color: "red", price: 50000, quantity: 1 },
+//             { id: 1, color: "black", price: 55000, quantity: 5 },
+//         ],
+//         reviews: [
+//             {
+//                 id: 1,
+//                 user: "Ahmad",
+//                 rating: 4.0,
+//                 title: "Good Product",
+//                 comments: "It is a very good product ....",
+//                 date: "06-02-2021",
+//                 status: true,
+//             },
+//             {
+//                 id: 2,
+//                 user: "Zubair",
+//                 rating: 3.0,
+//                 title: "Very Good Product",
+//                 comments: "zubair It is a very good product ....",
+//                 date: "05-02-2021",
+//                 status: false,
+//             },
+//         ],
+//     },
+// ]
+// for (var j = 0; j < products.length; j++) {
+//     var product = products[j];
+//     var sum = 0;
+//     for (var i = 0; i < product.reviews.length; i++) {
+//         sum = sum + product.reviews[i].rating;
+//     }
+
+//     var avgRating = sum / product.reviews.length;
+
+//     console.log("Product " + product.id + " = " + avgRating + "(" + product.reviews.length + ")");
+// }
