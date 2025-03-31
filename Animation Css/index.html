@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Css</title>
+    <style>
+        body {
+            background-color: black;
+            color: black; 
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-1 {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 5px;
+            animation-name: farooq;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes farooq {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+
+            /* 10%{
+                background-color: blue;
+            } */
+
+            25% {
+                left: 90%;
+                top: 0%;
+                background-color: aqua;
+                border-radius: 50%;
+            }
+
+            50% {
+                top: 90%;
+                left: 90%;
+                background-color: yellow;
+                border-radius: 30%;
+            }
+
+            75% {
+                top: 90%;
+                left: 0%;
+                background-color: bisque;
+                /* width: 60px; */
+                border-radius: 20%;
+            }
+
+            100% {
+                top: 0%;
+                left: 0%;
+                background-color: red;
+                border-radius: 10%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-1">
+        <h1>F</h1>
+    </div>
+</body>
+
+</html>
